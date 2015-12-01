@@ -1,0 +1,33 @@
+{
+      "name"                        : "playr-json-scenario"
+    , "description"                 : "package description"
+    , "version"                     : "1.0.0"
+    , "homepage"                    : "https://github.com/eventEmitter/playr-json-scenario"
+    , "author"                      : "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)"
+    , "license"                     : "MIT"
+    , "repository": {
+          "url"                     : "https://github.com/eventEmitter/playr-json-scenario.git"
+        , "type"                    : "git"
+    }
+    , "engines": {
+        "node"                      : ">=v4.1"
+    }
+    , "bugs": {
+        "url"                       : "https://github.com/eventEmitter/playr-json-scenario/issues"
+    }
+    , "dependencies": {
+          "ee-class"                : "1.x"
+        , "ee-types"                : "1.x"
+        , "ee-log"                  : "0.3.x"
+        , "ee-event-emitter"        : "0.3.x"
+        , "playr"                   : "1.x"
+    }
+    , "devDependencies": {
+          "mocha"                   : "2.x"
+    }
+    , "optionalDependencies": {}
+    , "keywords"                    : ["API-Test", "API", "Test", "Restful", "HTTP"]
+    , "scripts": {
+        "test"                      : "./node_modules/mocha/bin/mocha --reporter spec"
+    }
+}
