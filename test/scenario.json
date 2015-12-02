@@ -37,9 +37,9 @@
                   "kind": "array"
                 , "length": {
                      "kind": "comperator"
-                    , "comperator": ">"
+                    , "comperator": "<"
                     , "type": "number"
-                    , "value": 50
+                    , "value": 5000000
                 }
                 , "data": {
                     "id": {
@@ -67,7 +67,7 @@
                   "kind": "comperator"
                 , "comperator": "<"
                 , "type": "number"
-                , "value": 500
+                , "value": 1000
             }
         }
     }, {
