@@ -91,7 +91,7 @@
               "status": 200
             , "body": [{
                   "kind": "regexp"
-                , "match": "presaleWebsiteUrlee"
+                , "match": "presaleWebsiteUrl"
                 , "flags": "gi"
             }, {
                   "kind": "type"
