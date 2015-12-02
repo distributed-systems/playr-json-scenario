@@ -21,6 +21,10 @@
         }
         , "response": {
               "status": 200
+            , "body": [{
+                  "kind": "type"
+                , "type": "string"
+            }]
             , "headers": {
                 "date": {
                       "kind": "type"
