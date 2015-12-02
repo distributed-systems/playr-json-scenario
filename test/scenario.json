@@ -89,6 +89,14 @@
         }
         , "response": {
               "status": 200
+            , "body": [{
+                  "kind": "regexp"
+                , "match": "presaleWebsiteUrl"
+                , "flags": "gi"
+            }, {
+                  "kind": "type"
+                , "type": "string"
+            }]
             , "headers": {
                 "date": {
                       "kind": "type"
