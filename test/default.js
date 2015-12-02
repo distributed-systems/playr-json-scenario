@@ -8,7 +8,8 @@
 
 
 
-	var JSONScenario = require('../')
+	var   JSONScenario = require('../')
+        , ResponseValidator = require('../').ResponseValidator
 
 
 
@@ -21,8 +22,13 @@
             let playbook = new Playr();
 
             playbook.run(new JSONScenario({
-                path: __dirname+'/scenario.json'
+                  path: __dirname+'/scenario.json'
+                , url: 'http://master.cornercard.joinbox.com'
+                , log: true
             }));
+
+
+            playbook.use(new ResponseValidator());
 
 
             playbook.play().then((stats) => {

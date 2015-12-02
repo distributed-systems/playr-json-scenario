@@ -26,11 +26,21 @@
                       "kind": "type"
                     , "type": "date"  
                 }
-                , "content-range": "rows 0-12"
+                , "content-length": {
+                      "kind": "comperator"
+                    , "comperator": ">"
+                    , "value": 200
+                    , "type": "number"
+                }
             }
             , "content": {
                   "kind": "array"
-                , "length": 12
+                , "length": {
+                     "kind": "comperator"
+                    , "comperator": ">"
+                    , "type": "number"
+                    , "value": 50
+                }
                 , "data": {
                     "id": {
                           "kind": "comperator"
@@ -38,16 +48,6 @@
                         , "type": "number"
                         , "value": 500
                         , "optional": true
-                    }
-                    , "title": {
-                          "kind": "array"
-                        , "length": {
-                              "kind": "comperator"
-                            , "comperator": "="
-                            , "type": "number"
-                            , "value": 8
-                        }
-                        , "content": {}
                     }
                 }
             }
