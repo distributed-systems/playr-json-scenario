@@ -57,14 +57,18 @@ playbook.run(new JSONScenario({
         }
         , "response": {
               "status": 200
+            , "body": [{
+                  "kind": "type"
+                , "type": "string"
+            }]
             , "headers": {
                 "date": {
                       "kind": "type"
                     , "type": "date"  
                 }
                 , "content-length": {
-                      "kind": "comperator"
-                    , "comperator": ">"
+                      "kind": "comparator"
+                    , "comparator": ">"
                     , "value": 200
                     , "type": "number"
                 }
@@ -72,26 +76,44 @@ playbook.run(new JSONScenario({
             , "content": {
                   "kind": "array"
                 , "length": {
-                     "kind": "comperator"
-                    , "comperator": ">"
+                     "kind": "comparator"
+                    , "comparator": "<"
                     , "type": "number"
-                    , "value": 50
+                    , "value": 5000000
                 }
-                , "data": {
-                    "id": {
-                          "kind": "comperator"
-                        , "comperator": "<"
-                        , "type": "number"
-                        , "value": 500
-                        , "optional": true
+                , "data": [{
+                      "kind": "object"
+                    , "data": {
+                        "id": {
+                              "kind": "comparator"
+                            , "comparator": "<"
+                            , "type": "number"
+                            , "value": 500
+                            , "optional": true
+                        }
+                        , "eventData": {
+                              "kind": "array"
+                            , "optional": false
+                            , "data": { 
+                                  "kind": "object"
+                                , "data": {
+                                    "id": {
+                                          "kind": "comparator"
+                                        , "comparator": "<"
+                                        , "type": "number"
+                                        , "value": 50000000
+                                    }
+                                }
+                            }
+                        }
                     }
-                }
+                }]
             }
             , "responseTime": {
-                  "kind": "comperator"
-                , "comperator": "<"
+                  "kind": "comparator"
+                , "comparator": "<"
                 , "type": "number"
-                , "value": 500
+                , "value": 1000
             }
         }
     }, {
@@ -109,6 +131,41 @@ playbook.run(new JSONScenario({
                 , "range": "100-110"
                 , "select": "*, eventData.*"
                 , "api-version": "1"
+            }
+        }
+        , "response": {
+              "status": 200
+            , "body": [{
+                  "kind": "regexp"
+                , "match": "presaleWebsiteUrl"
+                , "flags": "gi"
+            }, {
+                  "kind": "type"
+                , "type": "string"
+            }]
+            , "headers": {
+                "date": {
+                      "kind": "type"
+                    , "type": "date"  
+                }
+                , "content-length": {
+                      "kind": "comparator"
+                    , "comparator": "<"
+                    , "value": 2000
+                    , "type": "number"
+                }
+            }
+            , "content": {
+                  "kind": "object"
+                , "data": {
+                    "id": {
+                          "kind": "comparator"
+                        , "comparator": "<"
+                        , "type": "number"
+                        , "value": 500
+                        , "optional": true
+                    }
+                }
             }
         }
     }]

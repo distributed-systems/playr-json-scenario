@@ -31,8 +31,8 @@
                     , "type": "date"  
                 }
                 , "content-length": {
-                      "kind": "comperator"
-                    , "comperator": ">"
+                      "kind": "comparator"
+                    , "comparator": ">"
                     , "value": 200
                     , "type": "number"
                 }
@@ -40,8 +40,8 @@
             , "content": {
                   "kind": "array"
                 , "length": {
-                     "kind": "comperator"
-                    , "comperator": "<"
+                     "kind": "comparator"
+                    , "comparator": "<"
                     , "type": "number"
                     , "value": 5000000
                 }
@@ -49,8 +49,8 @@
                       "kind": "object"
                     , "data": {
                         "id": {
-                              "kind": "comperator"
-                            , "comperator": "<"
+                              "kind": "comparator"
+                            , "comparator": "<"
                             , "type": "number"
                             , "value": 500
                             , "optional": true
@@ -62,8 +62,8 @@
                                   "kind": "object"
                                 , "data": {
                                     "id": {
-                                          "kind": "comperator"
-                                        , "comperator": "<"
+                                          "kind": "comparator"
+                                        , "comparator": "<"
                                         , "type": "number"
                                         , "value": 50000000
                                     }
@@ -74,8 +74,8 @@
                 }]
             }
             , "responseTime": {
-                  "kind": "comperator"
-                , "comperator": "<"
+                  "kind": "comparator"
+                , "comparator": "<"
                 , "type": "number"
                 , "value": 1000
             }
@@ -113,8 +113,8 @@
                     , "type": "date"  
                 }
                 , "content-length": {
-                      "kind": "comperator"
-                    , "comperator": "<"
+                      "kind": "comparator"
+                    , "comparator": "<"
                     , "value": 2000
                     , "type": "number"
                 }
@@ -123,8 +123,8 @@
                   "kind": "object"
                 , "data": {
                     "id": {
-                          "kind": "comperator"
-                        , "comperator": "<"
+                          "kind": "comparator"
+                        , "comparator": "<"
                         , "type": "number"
                         , "value": 500
                         , "optional": true
