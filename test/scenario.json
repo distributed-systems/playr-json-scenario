@@ -45,27 +45,33 @@
                     , "type": "number"
                     , "value": 5000000
                 }
-                , "data": {
-                    "id": {
-                          "kind": "comperator"
-                        , "comperator": "<"
-                        , "type": "number"
-                        , "value": 500
-                        , "optional": true
-                    }
-                    , "eventData": {
-                          "kind": "array"
-                        , "optional": false
-                        , "data": {
-                            "id": {
-                                  "kind": "comperator"
-                                , "comperator": "<"
-                                , "type": "number"
-                                , "value": 50000000
+                , "data": [{
+                      "kind": "object"
+                    , "data": {
+                        "id": {
+                              "kind": "comperator"
+                            , "comperator": "<"
+                            , "type": "number"
+                            , "value": 500
+                            , "optional": true
+                        }
+                        , "eventData": {
+                              "kind": "array"
+                            , "optional": false
+                            , "data": { 
+                                  "kind": "object"
+                                , "data": {
+                                    "id": {
+                                          "kind": "comperator"
+                                        , "comperator": "<"
+                                        , "type": "number"
+                                        , "value": 50000000
+                                    }
+                                }
                             }
                         }
                     }
-                }
+                }]
             }
             , "responseTime": {
                   "kind": "comperator"
@@ -111,6 +117,18 @@
                     , "comperator": "<"
                     , "value": 2000
                     , "type": "number"
+                }
+            }
+            , "content": {
+                  "kind": "object"
+                , "data": {
+                    "id": {
+                          "kind": "comperator"
+                        , "comperator": "<"
+                        , "type": "number"
+                        , "value": 500
+                        , "optional": true
+                    }
                 }
             }
         }
