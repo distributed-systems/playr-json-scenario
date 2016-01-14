@@ -22,7 +22,7 @@
             let playbook = new Playr();
 
             playbook.run(new JSONScenario({
-                  path: __dirname+'/scenario2.json'
+                  path: __dirname+'/scenario.json'
                 , url: 'http://master.cornercard.joinbox.com'
                 , log: true
             }));
