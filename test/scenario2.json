@@ -1,0 +1,249 @@
+{
+    "author": "chrome-extension",
+    "description": "",
+    "created": "2016-01-14 17:12:54",
+    "version": "0.0.1",
+    "protocolVersion": "0.1.x",
+    "scenario": [
+        {
+            "kind": "request",
+            "id": "get-venue?_nocache=1451932961267",
+            "request": {
+                "method": "GET",
+                "url": "https://emotions.cornercard.ch/venue?_nocache=1451932961267",
+                "headers": {
+                    "Pragma": "no-cache",
+                    "Select": "id,name,venueFloor.*,city.zip,city.name",
+                    "Order": "id asc",
+                    "API-Version": "0.1"
+                }
+            },
+            "response": {
+                "status": 200,
+                "responseTime": {
+                    "comparator": "<=",
+                    "type": "number",
+                    "value": null,
+                    "kind": "comparator"
+                },
+                "headers": {
+                    "Date": {
+                        "kind": "comparator",
+                        "type": "date",
+                        "optional": false,
+                        "comparator": "=",
+                        "value": "Thu Jan 14 2016 17:12:53 GMT+0100 (CET)"
+                    },
+                    "Rate-Limit-Cost": {
+                        "kind": "comparator",
+                        "type": "number",
+                        "optional": false,
+                        "comparator": "=",
+                        "value": 290
+                    },
+                    "Content-Language": {
+                        "kind": "comparator",
+                        "type": "string",
+                        "optional": false,
+                        "comparator": "=",
+                        "value": "de"
+                    },
+                    "Content-Type": {
+                        "kind": "comparator",
+                        "type": "string",
+                        "optional": false,
+                        "comparator": "=",
+                        "value": "application/json"
+                    }
+                },
+                "content": [
+                    {
+                        "kind": "type",
+                        "type": "array"
+                    },
+                    {
+                        "length": {
+                            "kind": "comparator",
+                            "value": 11,
+                            "comparator": "=",
+                            "type": "number"
+                        },
+                        "kind": "array",
+                        "data": [
+                            {
+                                "kind": "type",
+                                "type": "object"
+                            },
+                            {
+                                "kind": "object",
+                                "data": {
+                                    "id": [
+                                        {
+                                            "kind": "type",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "kind": "comparator",
+                                            "comparator": "=",
+                                            "type": "string",
+                                            "value": 1
+                                        }
+                                    ],
+                                    "name": [
+                                        {
+                                            "kind": "type",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "kind": "comparator",
+                                            "comparator": "=",
+                                            "type": "string",
+                                            "value": "Konservatorium für Musik Bern"
+                                        }
+                                    ],
+                                    "id_city": [
+                                        {
+                                            "kind": "type",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "kind": "comparator",
+                                            "comparator": "=",
+                                            "type": "string",
+                                            "value": 1756
+                                        }
+                                    ],
+                                    "venueFloor": [
+                                        {
+                                            "kind": "type",
+                                            "type": "array"
+                                        },
+                                        {
+                                            "length": {
+                                                "kind": "comparator",
+                                                "value": 1,
+                                                "comparator": "=",
+                                                "type": "number"
+                                            },
+                                            "kind": "array",
+                                            "data": [
+                                                {
+                                                    "kind": "type",
+                                                    "type": "object"
+                                                },
+                                                {
+                                                    "kind": "object",
+                                                    "data": {
+                                                        "id": [
+                                                            {
+                                                                "kind": "type",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "kind": "comparator",
+                                                                "comparator": "=",
+                                                                "type": "string",
+                                                                "value": 1
+                                                            }
+                                                        ],
+                                                        "id_venue": [
+                                                            {
+                                                                "kind": "type",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "kind": "comparator",
+                                                                "comparator": "=",
+                                                                "type": "string",
+                                                                "value": 1
+                                                            }
+                                                        ],
+                                                        "name": [],
+                                                        "created": [
+                                                            {
+                                                                "kind": "type",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "kind": "comparator",
+                                                                "comparator": "=",
+                                                                "type": "string",
+                                                                "value": "2014-08-04T13:39:14.000Z"
+                                                            }
+                                                        ],
+                                                        "updated": [
+                                                            {
+                                                                "kind": "type",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "kind": "comparator",
+                                                                "comparator": "=",
+                                                                "type": "string",
+                                                                "value": "2015-05-18T03:02:31.000Z"
+                                                            }
+                                                        ],
+                                                        "deleted": [],
+                                                        "capacity": [],
+                                                        "accessible": []
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "city": [
+                                        {
+                                            "kind": "type",
+                                            "type": "object"
+                                        },
+                                        {
+                                            "kind": "object",
+                                            "data": {
+                                                "zip": [
+                                                    {
+                                                        "kind": "type",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "kind": "comparator",
+                                                        "comparator": "=",
+                                                        "type": "string",
+                                                        "value": "3011"
+                                                    }
+                                                ],
+                                                "id": [
+                                                    {
+                                                        "kind": "type",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "kind": "comparator",
+                                                        "comparator": "=",
+                                                        "type": "string",
+                                                        "value": 1756
+                                                    }
+                                                ],
+                                                "name": [
+                                                    {
+                                                        "kind": "type",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "kind": "comparator",
+                                                        "comparator": "=",
+                                                        "type": "string",
+                                                        "value": "Bern"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
