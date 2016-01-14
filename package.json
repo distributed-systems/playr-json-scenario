@@ -1,7 +1,7 @@
 {
       "name"                        : "playr-json-scenario"
     , "description"                 : "plays back request scenarios defined in a json file"
-    , "version"                     : "2.0.16"
+    , "version"                     : "2.0.17"
     , "homepage"                    : "https://github.com/eventEmitter/playr-json-scenario"
     , "author"                      : "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)"
     , "license"                     : "MIT"
