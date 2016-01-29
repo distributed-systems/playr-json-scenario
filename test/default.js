@@ -23,7 +23,7 @@
 
             playbook.run(new JSONScenario({
                   path: __dirname+'/scenario.json'
-                , url: 'http://master.cornercard.joinbox.com'
+                , url: 'https://emotions.cornercard.ch'
                 , log: true
             }));
 
