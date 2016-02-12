@@ -51,13 +51,16 @@
                 , "data": [{
                       "kind": "object"
                     , "data": {
-                        "id": {
+                        "id": [{
                               "kind": "comparator"
                             , "comparator": "<"
                             , "type": "number"
                             , "value": 500
                             , "optional": true
-                        }
+                        }, {
+                              "kind": "nullable"
+                            , "value": true
+                        }]
                         , "eventData": {
                               "kind": "array"
                             , "optional": false
